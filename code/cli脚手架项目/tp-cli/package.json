@@ -1,0 +1,20 @@
+{
+  "name": "tp-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": {
+    "xr": "bin/cli.js",
+    "xr-add": "bin/xr-add.js",
+    "xr-delete": "bin/xr-delete.js",
+    "xr-list": "bin/xr-list.js",
+    "xr-init": "bin/xr-init.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^5.1.0",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^7.1.0",
+    "ora": "^4.0.4"
+  }
+}
