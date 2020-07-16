@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+</body>
+<script src="/snabbdom_ide.e31bb0bc.js"></script>
+<style>body {
+        background: #fafafa;
+        font-family: sans-serif;
+    }
+    .header {
+        text-align: center;
+    }
+    #app {
+        margin: 50px auto;
+        width: 500px;
+       
+    }
+    .title {
+        display: inline-block;
+        cursor: pointer;
+        background: #fff;
+        box-shadow: 0 0 1px rgba(0, 0, 0, .2);
+        padding: .5em .8em;
+        transition: box-shadow .05s ease-in-out;
+        -webkit-transition: box-shadow .05s ease-in-out;
+    }
+    .add {
+        float: right;    
+    }
+    .list {
+        position: relative;
+      }
+      .row {
+        overflow: hidden;
+        position: absolute;
+        box-sizing: border-box;
+        width: 100%;
+        left: 0px;
+        margin: .5em 0;
+        padding: 1em;
+        background: #fff;
+        box-shadow: 0 0 1px rgba(0, 0, 0, .2);
+        transition: transform .5s ease-in-out, opacity .5s ease-out, left .5s ease-in-out;
+        -webkit-transition: transform .5s ease-in-out, opacity .5s ease-out, left .5s ease-in-out;
+      }
+      .row div {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .row > div:nth-child(1) {
+        width: 5%;
+      }
+      .row > div:nth-child(2) {
+        width: 30%;
+      }
+      .row > div:nth-child(3) {
+        width: 65%;
+      }
+      .rm-btn {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #C25151;
+        width: 1.4em;
+        height: 1.4em;
+        text-align: center;
+        line-height: 1.4em;
+        padding: 0;
+      }</style>
+</html>
