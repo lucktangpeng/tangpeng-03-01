@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Vue</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>差值表达式</h1>
+      <h3>{{ msg }}</h3>
+      <h3>{{ count }}</h3>
+      <h3 v-html="html_content"></h3>
+      <h1>v-text</h1>
+      <div v-text="msg"></div>
+      <h1>v-model</h1>
+
+      <button v-on:click="ClickEvent">click</button>
+      <input type="text" v-model="msg" />
+      <input type="text" v-model="count" />
+    </div>
+    <script src="./js/dep.js"></script>
+    <script src="./js/watcher.js"></script>
+    <script src="./js/compiler.js"></script>
+    <script src="./js/objserver.js"></script>
+    <script src="./js/vue.js"></script>
+    <script>
+      let vm = new Vue({
+        el: "#app",
+        data: {
+          msg: "sb",
+          count: 99,
+          html_content: "<p>hello,Vue.js</p>"
+        },
+        methods : {
+          ClickEvent () {
+            console.log('123')
+          }
+        }
+      });
+      vm.msg = "ssss   bbbbb";
+    </script>
+  </body>
+</html>

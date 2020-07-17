@@ -1,0 +1,16 @@
+{
+  "name": "vue_ide-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "parcel index.html --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}
